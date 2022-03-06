@@ -1,5 +1,5 @@
 ## Descrizione concentuale
-CineMates20 è una piattaforma per gli appassionati di cinema, la soluzione è composta da due client, Client mobile (Android) destinato agli utenti e client Desktop destinato agli amministatori.
+CineMates20 è una piattaforma per gli appassionati di cinema, la soluzione è composta da due client, client mobile (Android) destinato agli utenti e client Desktop destinato agli amministatori.
 #### Le principali funzionalità del client mobile (Android):
 * Registrarsi, entrate con email, account Facebook e account Google.
 * Creare liste personalizzate di film, con il titolo e la descrizione.
