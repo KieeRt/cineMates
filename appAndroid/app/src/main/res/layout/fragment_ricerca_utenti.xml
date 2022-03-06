@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/textView_ricerca_amici"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimensione_titolo_big"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:text="@string/ricerca_utenti" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLaout_ricercaUtenti"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_baseline_search_24"
+
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_ricercaUtenti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:singleLine="true"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:gravity="left"
+        android:layout_marginTop="16dp"
+        android:text="@string/risultati_ricerca"
+        android:alpha="@dimen/text_lv2_alpha"
+        />
+
+
+    <ListView
+        android:id="@+id/listView_risultati_ricerca_utenti"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+
+
+</LinearLayout>

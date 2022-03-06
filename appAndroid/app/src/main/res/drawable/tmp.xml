@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="682dp"
+    android:height="450dp"
+    android:viewportWidth="682"
+    android:viewportHeight="450">
+
+    <path
+        android:fillColor="#31C6E8"
+        android:fillAlpha="0.5"
+        android:pathData="M150 150L279.904 225V375L150 450L20.0962 375V225L150 150Z" />
+    <path
+        android:fillColor="#31E89F"
+        android:fillAlpha="0.5"
+        android:pathData="M150 0L279.904 75V225L150 300L20.0962 225L20.0962 75L150 0Z" />
+    <path
+        android:fillColor="#31C6E8"
+        android:fillAlpha="0.5"
+        android:pathData="M280 75L409.904 150V300L280 375L150.096 300V150L280 75Z" />
+
+</vector>

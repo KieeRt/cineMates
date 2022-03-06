@@ -1,0 +1,770 @@
+@startuml
+
+title __APPANDROID.APP's Class Diagram__\n
+
+  namespace com.example.appandroid {
+    class com.example.appandroid.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace aws {
+      class com.example.appandroid.aws.MyAmplifyApp {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace aws {
+      namespace apiGateway {
+        class com.example.appandroid.aws.apiGateway.ApiGateway {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace aws {
+      namespace s3 {
+        class com.example.appandroid.aws.s3.S3Class {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      class com.example.appandroid.globalUtils.AlertDialogUtils {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      interface com.example.appandroid.globalUtils.DefaultMethodsFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      class com.example.appandroid.globalUtils.DisplayDialog {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      class com.example.appandroid.globalUtils.JSONObjectManipulator {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      abstract class com.example.appandroid.globalUtils.KeyboardUtils {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      class com.example.appandroid.globalUtils.Rotante {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      class com.example.appandroid.globalUtils.UtilsToast {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      namespace cards {
+        class com.example.appandroid.globalUtils.cards.SliderAdapter {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      namespace cards {
+        class com.example.appandroid.globalUtils.cards.SliderCard {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      namespace utils {
+        class com.example.appandroid.globalUtils.utils.BackgroundBitmapCache {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      namespace utils {
+        class com.example.appandroid.globalUtils.utils.BackgroundFilmCache {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      namespace utils {
+        class com.example.appandroid.globalUtils.utils.CacheLocale {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace globalUtils {
+      namespace utils {
+        class com.example.appandroid.globalUtils.utils.DecodeBitmapTask {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.film {
+      class com.example.appandroid.listViewClass.film.AdapterFilm {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.film {
+      class com.example.appandroid.listViewClass.film.Film {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.listaPersonalizzata {
+      class com.example.appandroid.listViewClass.listaPersonalizzata.AdapterListaPersonalizzata {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.listaPersonalizzata {
+      class com.example.appandroid.listViewClass.listaPersonalizzata.AdapterTendinaSalvaFilmInLista {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.listaPersonalizzata {
+      class com.example.appandroid.listViewClass.listaPersonalizzata.ListaPersonalizzata {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.notifica {
+      class com.example.appandroid.listViewClass.notifica.AdapterNotifica {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.notifica {
+      class com.example.appandroid.listViewClass.notifica.Notifica {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.segnalazione {
+      class com.example.appandroid.listViewClass.segnalazione.Segnalazione {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.utente {
+      class com.example.appandroid.listViewClass.utente.AdapterUtente {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.utente {
+      class com.example.appandroid.listViewClass.utente.AdapterUtenteListaAmici {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace listViewClass.utente {
+      class com.example.appandroid.listViewClass.utente.Utente {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace movieApi {
+      class com.example.appandroid.movieApi.MovieApi {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace notifiche {
+      class com.example.appandroid.notifiche.Notifiche {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace repository {
+      class com.example.appandroid.repository.Repository {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.altroUtente {
+      class com.example.appandroid.ui.altroUtente.AltroUtenteFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.altroUtente {
+      class com.example.appandroid.ui.altroUtente.AltroUtenteViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.altroUtente {
+      class com.example.appandroid.ui.altroUtente.AltroUtenteViewModelFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.amici {
+      class com.example.appandroid.ui.amici.AmiciFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.amici {
+      class com.example.appandroid.ui.amici.AmiciViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.amici {
+      class com.example.appandroid.ui.amici.AmiciViewModelFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.contenutoLista {
+      class com.example.appandroid.ui.contenutoLista.ContenutoListaFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.contenutoLista {
+      class com.example.appandroid.ui.contenutoLista.ContenutoListaViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.contenutoLista {
+      namespace ltroUtente {
+        class com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.contenutoLista {
+      namespace ltroUtente {
+        class com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteViewModel {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.contenutoLista {
+      namespace ltroUtente {
+        class com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteViewModelFactory {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.elencoListeAltroUtente {
+      class com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.elencoListeAltroUtente {
+      class com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.elencoListeAltroUtente {
+      class com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteViewModelFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.elencoListePropie {
+      class com.example.appandroid.ui.elencoListePropie.ElencoListeProprieFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.elencoListePropie {
+      class com.example.appandroid.ui.elencoListePropie.ElencoListeProprieViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.filmInComune {
+      class com.example.appandroid.ui.filmInComune.FilmInComuneFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.filmInComune {
+      class com.example.appandroid.ui.filmInComune.FilmInComuneViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.home {
+      class com.example.appandroid.ui.home.HomeFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.home {
+      class com.example.appandroid.ui.home.HomeViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.info {
+      class com.example.appandroid.ui.info.InfoFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.info {
+      class com.example.appandroid.ui.info.InfoViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.login {
+      class com.example.appandroid.ui.login.LoginActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.login {
+      class com.example.appandroid.ui.login.LoginViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.main {
+      class com.example.appandroid.ui.main.MainActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.main {
+      class com.example.appandroid.ui.main.MainActivityViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.main {
+      class com.example.appandroid.ui.main.MainActivityViewModelFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.notifiche {
+      class com.example.appandroid.ui.notifiche.NotificheFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.notifiche {
+      class com.example.appandroid.ui.notifiche.NotificheViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.profilo {
+      class com.example.appandroid.ui.profilo.ProfiloFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.profilo {
+      class com.example.appandroid.ui.profilo.ProfiloViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.profilo {
+      class com.example.appandroid.ui.profilo.ProfiloViewModelFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.registrazione {
+      class com.example.appandroid.ui.registrazione.RegistrazioneActivity {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.registrazione {
+      class com.example.appandroid.ui.registrazione.RegistrazioneViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.ricerca {
+      class com.example.appandroid.ui.ricerca.RicercaFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.ricerca {
+      class com.example.appandroid.ui.ricerca.RicercaViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.ricerca {
+      namespace tenti {
+        class com.example.appandroid.ui.ricercaUtenti.RicercaUtentiFragment {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.ricerca {
+      namespace tenti {
+        class com.example.appandroid.ui.ricercaUtenti.RicercaUtentiViewModel {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.ricerca {
+      namespace tenti {
+        class com.example.appandroid.ui.ricercaUtenti.RicercaUtentiViewModelFactory {
+        }
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.richiesteAmicizia {
+      class com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.richiesteAmicizia {
+      class com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.richiesteAmicizia {
+      class com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaViewModelFactory {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.schedaFilm {
+      class com.example.appandroid.ui.schedaFilm.SchedaFilmFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.appandroid {
+    namespace ui.schedaFilm {
+      class com.example.appandroid.ui.schedaFilm.SchedaFilmViewModel {
+      }
+    }
+  }
+  
+
+  com.example.appandroid.aws.MyAmplifyApp -up-|> android.app.Application
+  com.example.appandroid.globalUtils.DisplayDialog o-- com.example.appandroid.listViewClass.listaPersonalizzata.AdapterTendinaSalvaFilmInLista : adapter
+  com.example.appandroid.globalUtils.DisplayDialog o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.globalUtils.Rotante o-- com.example.appandroid.globalUtils.cards.SliderAdapter : sliderAdapter
+  com.example.appandroid.globalUtils.cards.SliderAdapter -up-|> androidx.recyclerview.widget.RecyclerView.Adapter
+  com.example.appandroid.globalUtils.cards.SliderCard .up.|> com.example.appandroid.globalUtils.utils.DecodeBitmapTask.Listener
+  com.example.appandroid.globalUtils.cards.SliderCard -up-|> androidx.recyclerview.widget.RecyclerView.ViewHolder
+  com.example.appandroid.globalUtils.cards.SliderCard o-- com.example.appandroid.globalUtils.utils.DecodeBitmapTask : task
+  com.example.appandroid.globalUtils.utils.DecodeBitmapTask -up-|> android.os.AsyncTask
+  com.example.appandroid.globalUtils.utils.DecodeBitmapTask o-- com.example.appandroid.globalUtils.utils.BackgroundBitmapCache : cache
+  com.example.appandroid.listViewClass.film.AdapterFilm -up-|> android.widget.BaseAdapter
+  com.example.appandroid.listViewClass.film.Film .up.|> java.io.Serializable
+  com.example.appandroid.listViewClass.listaPersonalizzata.AdapterListaPersonalizzata -up-|> android.widget.BaseAdapter
+  com.example.appandroid.listViewClass.listaPersonalizzata.AdapterTendinaSalvaFilmInLista -up-|> android.widget.BaseAdapter
+  com.example.appandroid.listViewClass.listaPersonalizzata.AdapterTendinaSalvaFilmInLista o-- com.example.appandroid.listViewClass.film.Film : film
+  com.example.appandroid.listViewClass.listaPersonalizzata.ListaPersonalizzata .up.|> java.io.Serializable
+  com.example.appandroid.listViewClass.notifica.AdapterNotifica -up-|> android.widget.BaseAdapter
+  com.example.appandroid.listViewClass.utente.AdapterUtente -up-|> android.widget.BaseAdapter
+  com.example.appandroid.listViewClass.utente.AdapterUtenteListaAmici .up.|> android.widget.Filterable
+  com.example.appandroid.listViewClass.utente.AdapterUtenteListaAmici -up-|> android.widget.BaseAdapter
+  com.example.appandroid.listViewClass.utente.AdapterUtenteListaAmici o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.listViewClass.utente.Utente .up.|> java.io.Serializable
+  com.example.appandroid.repository.Repository o-- com.example.appandroid.aws.apiGateway.ApiGateway : apiGateway
+  com.example.appandroid.repository.Repository o-- com.example.appandroid.globalUtils.utils.CacheLocale : cache
+  com.example.appandroid.repository.Repository o-- com.example.appandroid.globalUtils.utils.BackgroundFilmCache : cacheFilm
+  com.example.appandroid.ui.altroUtente.AltroUtenteFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.altroUtente.AltroUtenteFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.altroUtente.AltroUtenteFragment o-- com.example.appandroid.ui.altroUtente.AltroUtenteViewModel : viewModel
+  com.example.appandroid.ui.altroUtente.AltroUtenteViewModel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.appandroid.ui.altroUtente.AltroUtenteViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.altroUtente.AltroUtenteViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.amici.AmiciFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.amici.AmiciFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.amici.AmiciFragment o-- com.example.appandroid.listViewClass.utente.AdapterUtenteListaAmici : adapterAmici
+  com.example.appandroid.ui.amici.AmiciFragment o-- com.example.appandroid.listViewClass.utente.AdapterUtente : adapterRichiesteAmicizia
+  com.example.appandroid.ui.amici.AmiciFragment o-- com.example.appandroid.ui.amici.AmiciViewModel : amiciViewModel
+  com.example.appandroid.ui.amici.AmiciViewModel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.appandroid.ui.amici.AmiciViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.amici.AmiciViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.contenutoLista.ContenutoListaFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.contenutoLista.ContenutoListaFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.contenutoLista.ContenutoListaFragment o-- com.example.appandroid.listViewClass.film.AdapterFilm : adapterFilm
+  com.example.appandroid.ui.contenutoLista.ContenutoListaFragment o-- com.example.appandroid.ui.contenutoLista.ContenutoListaViewModel : viewModel
+  com.example.appandroid.ui.contenutoLista.ContenutoListaViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.contenutoLista.ContenutoListaViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteFragment o-- com.example.appandroid.listViewClass.film.AdapterFilm : adapterFilm
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteFragment o-- com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteViewModel : viewModel
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteFragment o-- com.example.appandroid.listViewClass.listaPersonalizzata.AdapterListaPersonalizzata : adapter
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteFragment o-- com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteViewModel : viewModel
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.elencoListePropie.ElencoListeProprieFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.elencoListePropie.ElencoListeProprieFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.elencoListePropie.ElencoListeProprieFragment o-- com.example.appandroid.listViewClass.listaPersonalizzata.AdapterListaPersonalizzata : adapter
+  com.example.appandroid.ui.elencoListePropie.ElencoListeProprieFragment o-- com.example.appandroid.ui.elencoListePropie.ElencoListeProprieViewModel : viewModel
+  com.example.appandroid.ui.elencoListePropie.ElencoListeProprieViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.elencoListePropie.ElencoListeProprieViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.filmInComune.FilmInComuneFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.filmInComune.FilmInComuneFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.filmInComune.FilmInComuneFragment o-- com.example.appandroid.listViewClass.film.AdapterFilm : adapterFilm
+  com.example.appandroid.ui.filmInComune.FilmInComuneFragment o-- com.example.appandroid.ui.filmInComune.FilmInComuneViewModel : viewModel
+  com.example.appandroid.ui.filmInComune.FilmInComuneViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.filmInComune.FilmInComuneViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.home.HomeFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.home.HomeFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.home.HomeFragment o-- com.example.appandroid.ui.home.HomeViewModel : homeViewModel
+  com.example.appandroid.ui.home.HomeViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.home.HomeViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.info.InfoFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.info.InfoFragment o-- com.example.appandroid.ui.info.InfoViewModel : InfoViewModel
+  com.example.appandroid.ui.info.InfoViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.login.LoginActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appandroid.ui.login.LoginActivity o-- com.example.appandroid.ui.login.LoginViewModel : loginViewModel
+  com.example.appandroid.ui.login.LoginViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.login.LoginViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.main.MainActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appandroid.ui.main.MainActivity o-- com.example.appandroid.ui.main.MainActivityViewModel : viewModel
+  com.example.appandroid.ui.main.MainActivityViewModel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.appandroid.ui.main.MainActivityViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.main.MainActivityViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.notifiche.NotificheFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.notifiche.NotificheFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.notifiche.NotificheFragment o-- com.example.appandroid.listViewClass.notifica.AdapterNotifica : adapterNotifica
+  com.example.appandroid.ui.notifiche.NotificheFragment o-- com.example.appandroid.ui.notifiche.NotificheViewModel : viewModel
+  com.example.appandroid.ui.notifiche.NotificheViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.notifiche.NotificheViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.profilo.ProfiloFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.profilo.ProfiloFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.profilo.ProfiloFragment o-- com.example.appandroid.ui.profilo.ProfiloViewModel : profiloViewModel
+  com.example.appandroid.ui.profilo.ProfiloViewModel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.appandroid.ui.profilo.ProfiloViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.profilo.ProfiloViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.registrazione.RegistrazioneActivity -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.appandroid.ui.registrazione.RegistrazioneActivity o-- com.example.appandroid.ui.registrazione.RegistrazioneViewModel : viewModel
+  com.example.appandroid.ui.registrazione.RegistrazioneViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.registrazione.RegistrazioneViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.ricerca.RicercaFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.ricerca.RicercaFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.ricerca.RicercaFragment o-- com.example.appandroid.listViewClass.film.AdapterFilm : adapterFilm
+  com.example.appandroid.ui.ricerca.RicercaFragment o-- com.example.appandroid.ui.ricerca.RicercaViewModel : ricercaViewModel
+  com.example.appandroid.ui.ricerca.RicercaViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.ricerca.RicercaViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiFragment o-- com.example.appandroid.listViewClass.utente.AdapterUtente : adapterUtente
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiFragment o-- com.example.appandroid.ui.ricercaUtenti.RicercaUtentiViewModel : viewModel
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiViewModel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.ricercaUtenti.RicercaUtentiViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaFragment o-- com.example.appandroid.listViewClass.utente.AdapterUtente : adapterUtentiRichiesteAmicizia
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaFragment o-- com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaViewModel : viewModel
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaViewModel -up-|> androidx.lifecycle.AndroidViewModel
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaViewModel o-- com.example.appandroid.repository.Repository : repository
+  com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaViewModelFactory .up.|> androidx.lifecycle.ViewModelProvider.Factory
+  com.example.appandroid.ui.schedaFilm.SchedaFilmFragment .up.|> com.example.appandroid.globalUtils.DefaultMethodsFragment
+  com.example.appandroid.ui.schedaFilm.SchedaFilmFragment -up-|> androidx.fragment.app.Fragment
+  com.example.appandroid.ui.schedaFilm.SchedaFilmFragment o-- com.example.appandroid.listViewClass.film.Film : film
+  com.example.appandroid.ui.schedaFilm.SchedaFilmFragment o-- com.example.appandroid.ui.schedaFilm.SchedaFilmViewModel : viewModel
+  com.example.appandroid.ui.schedaFilm.SchedaFilmViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.appandroid.ui.schedaFilm.SchedaFilmViewModel o-- com.example.appandroid.repository.Repository : repository
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

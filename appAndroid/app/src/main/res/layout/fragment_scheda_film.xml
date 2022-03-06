@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/immagineFilm"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="198dp"
+        android:contentDescription="@string/descrizioneImmagineFilm"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/titoloFilm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:alpha="@dimen/text_lv2_alpha"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="24sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/immagineFilm"
+        app:layout_constraintTop_toBottomOf="@+id/immagineFilm" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pulsanteAddInListaSchedaFilm"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_playlist_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/valutazioneFilm"
+
+        />
+
+    <TextView
+        android:id="@+id/descrizioneFilm"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:alpha="@dimen/text_lv3_alpha"
+        android:background="@drawable/tendina_background"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titoloFilm"
+        app:layout_constraintTop_toBottomOf="@+id/titoloFilm"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/scrittaDurataFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="@dimen/text_lv2_alpha"
+        android:text="@string/durataTemporanea"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descrizioneFilm"
+        app:layout_constraintTop_toBottomOf="@+id/descrizioneFilm" />
+
+    <TextView
+        android:id="@+id/scrittaGenereFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="@dimen/text_lv2_alpha"
+        android:text="@string/genereTemporaneo"
+        app:layout_constraintStart_toStartOf="@+id/scrittaDurataFilm"
+        app:layout_constraintTop_toBottomOf="@+id/scrittaDurataFilm" />
+
+    <TextView
+        android:id="@+id/scrittaValutazioneFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:alpha="@dimen/text_lv2_alpha"
+        android:text="@string/valutazioneTemporanea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scrittaGenereFilm"
+        app:layout_constraintTop_toBottomOf="@+id/scrittaGenereFilm"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/durataFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:alpha="@dimen/text_lv3_alpha"
+        app:layout_constraintBottom_toBottomOf="@+id/scrittaDurataFilm"
+        app:layout_constraintStart_toEndOf="@+id/scrittaDurataFilm"
+        app:layout_constraintTop_toTopOf="@+id/scrittaDurataFilm" />
+
+    <TextView
+        android:id="@+id/genereFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:alpha="@dimen/text_lv3_alpha"
+        app:layout_constraintBottom_toBottomOf="@+id/scrittaGenereFilm"
+        app:layout_constraintStart_toEndOf="@+id/scrittaGenereFilm"
+        app:layout_constraintTop_toTopOf="@+id/scrittaGenereFilm" />
+
+    <TextView
+        android:id="@+id/valutazioneFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:alpha="@dimen/text_lv3_alpha"
+        app:layout_constraintBottom_toBottomOf="@+id/scrittaValutazioneFilm"
+        app:layout_constraintStart_toEndOf="@+id/scrittaValutazioneFilm"
+        app:layout_constraintTop_toTopOf="@+id/scrittaValutazioneFilm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

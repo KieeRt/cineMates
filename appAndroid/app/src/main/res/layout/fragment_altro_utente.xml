@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView_immagine_altroUtente"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView_nomeUtente_altroUtente"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:autoSizeTextType="uniform"
+            android:maxLines="1"
+            android:textSize="@dimen/dimensione_titolo" />
+
+
+        <ImageView
+            android:id="@+id/imageView_opzione_altro_utente_1"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView_opzione_altro_utente_2"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="1dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView_liste_altro_utente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/elenco_liste"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLista"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_liste_altro_utente"
+            app:viewUpdater="com.ramotion.cardslider.DefaultViewUpdater" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewLista">
+
+            <FrameLayout
+                android:id="@+id/titoliListe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/titolo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/titolo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18sp" />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_film_in_comune_schermata_altro_utente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/film_in_comune"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFilm"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_film_in_comune_schermata_altro_utente"
+            app:viewUpdater="com.ramotion.cardslider.DefaultViewUpdater" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

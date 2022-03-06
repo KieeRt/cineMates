@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="350dp"
+    android:background="@drawable/tendina_background">
+
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+
+        android:text="@string/titoloTendinaCambioImmagine"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/semiGrey"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSalvaImmagineTendinaCambioImmagineProfilo"
+        app:layout_constraintStart_toStartOf="@+id/buttonAnnullaTendinaScegliImmagineProfilo"
+        app:layout_constraintTop_toBottomOf="@+id/titolo" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/semiGrey"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnnullaTendinaScegliImmagineProfilo"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSalvaImmagineTendinaCambioImmagineProfilo"
+        app:layout_constraintStart_toStartOf="@+id/buttonAnnullaTendinaScegliImmagineProfilo" />
+
+    <Button
+        android:id="@+id/buttonAnnullaTendinaScegliImmagineProfilo"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_textfield"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Annulla"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSalvaImmagineTendinaCambioImmagineProfilo"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:background="@drawable/background_button_textfield"
+        android:layout_marginEnd="16dp"
+        android:text="Salva"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAnnullaTendinaScegliImmagineProfilo"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/immagineProfiloScelta"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titolo"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <Button
+        android:id="@+id/buttonScegliImmagine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/linkColor"
+        android:text="@string/testoButtonScegliImmagine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagineProfiloScelta" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_motionLayout"
+    android:layout_width="@dimen/standard_width"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:layoutDescription="@xml/fragment_amici_scene">
+
+    <TextView
+        android:id="@+id/textView_amici"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/amici"
+        android:textSize="@dimen/dimensione_titolo_big"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/richieste_di_amicizia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="@dimen/text_lv2_alpha"
+
+        android:padding="3dip"
+        android:text="@string/richieste_di_amicizia"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        android:layout_marginTop="8dp"
+
+        app:layout_constraintBottom_toTopOf="@+id/ListView_richieste_amicizia"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_amici"
+        app:layout_constraintVertical_bias="1"
+
+        />
+
+    <TextView
+        android:id="@+id/tutte_richieste_di_amicizia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:padding="3dip"
+
+        android:text="@string/tutte_le_richieste"
+        android:textSize="@dimen/dimensione_sottotitolo"
+
+
+        android:textColor="@color/linkColor"
+        app:layout_constraintBottom_toTopOf="@+id/ListView_richieste_amicizia"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_amici"
+        app:layout_constraintVertical_bias="1" />
+
+
+    <ListView
+        android:id="@+id/ListView_richieste_amicizia"
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+
+
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_amici">
+
+    </ListView>
+
+
+    <View
+        android:id="@+id/linea_separatore_amici"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+
+        android:background="@color/grey"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ListView_richieste_amicizia"
+        app:layout_constraintVertical_bias="0"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/icona_aggiungi_amico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linea_separatore_amici"
+
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        android:elevation="400dp"
+        app:fabSize="mini"
+        />
+
+    <TextView
+        android:id="@+id/textView_aggiungi_amico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/aggiungi_nuovo_amico"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        android:alpha="@dimen/text_lv2_alpha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icona_aggiungi_amico" />
+
+
+
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_ricercaAmici"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:boxStrokeColor="@color/mtrl_navigation_bar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="10dp"
+
+        app:endIconMode="custom"
+        app:endIconDrawable="@drawable/ic_baseline_search_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_aggiungi_amico"
+        android:elevation="4dp"
+
+        >
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_ricercaAmici"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cerca tra gli amici"
+            android:singleLine="true"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elenco_amici"
+        android:alpha="@dimen/text_lv2_alpha"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        app:layout_constraintBottom_toTopOf="@+id/listView_lista_amici"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_ricercaAmici" />
+
+    <ListView
+        android:id="@+id/listView_lista_amici"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="40dp"
+
+
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_ricercaAmici"
+
+        />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
+

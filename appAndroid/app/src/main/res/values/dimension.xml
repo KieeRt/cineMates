@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="icon_home_bar">150</integer>
+    <dimen name="recycler_view_left_offset">9dp</dimen>
+    <dimen name="left_offset">61dp</dimen>
+    <dimen name="card_width">148dp</dimen>
+    <dimen name="card_corner_radius">10dp</dimen>
+    <dimen name="standard_width">340dp</dimen>
+    <dimen name="text_lv1_alpha">1</dimen>
+    <dimen name="text_lv2_alpha">0.87</dimen>
+    <dimen name="text_lv3_alpha">0.60</dimen>
+    <dimen name="dimensione_titolo_big">34sp</dimen>
+    <dimen name="dimensione_titolo">24sp</dimen>
+    <dimen name="dimensione_sottotitolo">16sp</dimen>
+
+
+</resources>

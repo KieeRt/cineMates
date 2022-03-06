@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imagine_accetta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_check_24"
+
+        app:layout_constraintHorizontal_chainStyle="spread"
+
+        app:layout_constraintRight_toLeftOf="@+id/linea_dx"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/accetta_amicizia" />
+
+    <ImageView
+        android:id="@+id/linea_dx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+
+        app:layout_constraintLeft_toRightOf="@+id/imagine_accetta"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+
+        android:contentDescription="@string/rifiuta_amicizia"
+        />
+
+    <ImageView
+        android:id="@+id/imagine_aggiungi_amico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_person_add_alt_1_24"
+
+        app:layout_constraintLeft_toRightOf="@+id/imagine_accetta"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+        android:contentDescription="@string/aggiungi_amico"
+        />
+    <ImageView
+        android:id="@+id/imagine_elimina_amico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/ic_baseline_person_off_24"
+
+
+
+        app:layout_constraintLeft_toRightOf="@+id/imagine_accetta"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:visibility="invisible"
+        android:contentDescription="@string/rimuovi_amico"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

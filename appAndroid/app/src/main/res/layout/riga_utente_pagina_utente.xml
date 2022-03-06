@@ -1,0 +1,34 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp" >
+
+    <ImageView
+        android:id="@+id/imageView_immagine_utente"
+        android:layout_width="10dp"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/descrizioneImmagineProfilo"
+        app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/textView_nomeUtente_profiloUtente"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_weight="1"
+        android:textSize="@dimen/dimensione_titolo"
+        android:gravity="center_vertical"
+        android:text="@string/nome_utente" />
+    <include
+        android:layout_width="100dp"
+        android:layout_height="90dp"
+        layout="@layout/opzioni_utente"/>
+
+</LinearLayout>
+

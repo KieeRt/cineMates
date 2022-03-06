@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TextInputLaout_ricercaFilm"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+        app:endIconDrawable="@drawable/ic_baseline_search_24"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titoloRicercaFilm">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputEditText_ricercaFilm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintBarraRicercaFilm"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ListView
+        android:id="@+id/listViewRicercaFilm"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titoloRisultatiRicerca" />
+
+
+    <TextView
+        android:id="@+id/titoloRisultatiRicerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="@dimen/text_lv3_alpha"
+        android:text="@string/risultati_ricerca"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        app:layout_constraintStart_toStartOf="@+id/TextInputLaout_ricercaFilm"
+        app:layout_constraintTop_toBottomOf="@+id/TextInputLaout_ricercaFilm" />
+
+    <TextView
+        android:id="@+id/titoloRicercaFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ricerca film"
+        android:textSize="@dimen/dimensione_titolo_big"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

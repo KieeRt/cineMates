@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/imageView_immagine_utente"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            app:shapeAppearanceOverlay="@style/Circular"
+            app:srcCompat="@drawable/ic_baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/textView_nomeUtente_profiloUtente"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/nome_utente"
+            android:textSize="@dimen/dimensione_titolo"/>
+
+
+        <ImageView
+            android:id="@+id/imageView_rimuoviUtente"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_person_off_24"
+            />
+
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/textView_film_in_comune_schermata_altro_utente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/film_in_comune"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewFilm"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_film_in_comune_schermata_altro_utente"
+            app:viewUpdater="com.ramotion.cardslider.DefaultViewUpdater" />
+
+
+        <TextView
+            android:id="@+id/textView_liste_utente_amico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/elenco_liste"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewFilm" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLista"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="8dp"
+            android:overScrollMode="never"
+            app:layoutManager="com.ramotion.cardslider.CardSliderLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_liste_utente_amico"
+            app:viewUpdater="com.ramotion.cardslider.DefaultViewUpdater" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewLista">
+
+            <FrameLayout
+                android:id="@+id/titoliListe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/titolo1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18sp"
+                    />
+
+                <TextView
+                    android:id="@+id/titolo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="18sp"
+                    />
+
+            </FrameLayout>
+
+
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

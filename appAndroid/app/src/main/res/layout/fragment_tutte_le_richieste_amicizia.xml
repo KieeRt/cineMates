@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        android:text="@string/richieste_di_amicizia"
+        android:alpha="@dimen/text_lv2_alpha"/>
+
+    <ListView
+        android:id="@+id/listView_tutte_richieste_amicizia"
+
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="@dimen/standard_width"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</LinearLayout>

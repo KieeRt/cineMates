@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="200">
+       <KeyFrameSet>
+       </KeyFrameSet>
+
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tutte_richieste_di_amicizia"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_amici"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView_amici"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_amici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/richieste_di_amicizia"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:layout_height="129dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            motion:layout_constraintTop_toBottomOf="@+id/richieste_di_amicizia"
+            android:id="@+id/ListView_richieste_amicizia"
+            android:layout_marginTop="8dp" />
+        <Constraint
+            android:elevation="400dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linea_separatore_amici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/icona_aggiungi_amico" />
+        <Constraint
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/icona_aggiungi_amico"
+            android:alpha="@dimen/text_lv2_alpha"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView_aggiungi_amico"
+            android:layout_marginTop="4dp" />
+        <Constraint
+            android:elevation="4dp"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/standard_width"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_aggiungi_amico"
+            android:layout_marginStart="10dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:id="@+id/textInputLayout_ricercaAmici" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_ricercaAmici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView4" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_ricercaAmici"
+            android:alpha="@dimen/text_lv2_alpha"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView4"
+            android:layout_marginTop="8dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/standard_width"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textInputLayout_ricercaAmici"
+            app:endIconDrawable="@drawable/ic_baseline_close_24"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:id="@+id/textView_amici"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/textView_amici"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:id="@+id/richieste_di_amicizia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@+id/ListView_richieste_amicizia"
+            motion:layout_constraintVertical_bias="1"
+            motion:layout_constraintTop_toTopOf="@+id/textView_amici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/tutte_richieste_di_amicizia"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@+id/ListView_richieste_amicizia"
+            motion:layout_constraintVertical_bias="1"
+            motion:layout_constraintTop_toTopOf="@+id/textView_amici"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/ListView_richieste_amicizia"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            motion:layout_constraintTop_toBottomOf="@+id/textView_amici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="40dp"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/linea_separatore_amici"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintVertical_bias="0"
+            motion:layout_constraintTop_toBottomOf="@id/ListView_richieste_amicizia"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/icona_aggiungi_amico"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/linea_separatore_amici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible" />
+        <Constraint
+            android:id="@+id/textView_aggiungi_amico"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/icona_aggiungi_amico"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_ricercaAmici"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView4" />
+        <Constraint
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toTopOf="@+id/listView_lista_amici"
+            motion:layout_constraintTop_toBottomOf="@+id/textInputLayout_ricercaAmici"
+            android:alpha="@dimen/text_lv2_alpha"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/textView4"
+            android:layout_marginTop="8dp" />
+    </ConstraintSet>
+    <Transition
+        android:id="@+id/transition_restore_default_scene_amici"
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/start" />
+</MotionScene>

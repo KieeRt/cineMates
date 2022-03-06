@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/drawable/tendina_background.xml" value="0.26944444444444443" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/activity_login.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/activity_registrazione.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/component_main_view.xml" value="0.1" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_altro_utente.xml" value="0.2550925925925926" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_contenuto_lista_altro_utente.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_contenuto_lista_propria.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_home.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_profilo.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_ricerca_film.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_ricerca_utenti.xml" value="0.1" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_scheda_film.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_utente_amico.xml" value="0.22" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_utente_non_amico.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/riga_notifica.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/riga_utente.xml" value="0.5" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_cambia_immagine.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_cambio_password.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_conferma_registrazione.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_crea_nuova_lista.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_ho_gia_un_codice.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_recupero_password.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_recupero_password_cambiofinale.xml" value="0.22" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_recupero_password_codice.xml" value="0.25159817351598174" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_scegli_immagine.xml" value="0.1574074074074074" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_scegli_username.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/tendina_segnalazione.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/menu/menu_opzioni_film_lista_altri.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/menu/menu_opzioni_film_lista_propria.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/menu/menu_opzioni_lista_propia.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/menu/menu_opzioni_lista_propria.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/carmine/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/menu/menu_principale.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dimal/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_altro_utente.xml" value="0.22793487574978577" />
+        <entry key="..\:/Users/dimal/Documents/GitHub/cineMates20/appAndroid/app/src/main/res/layout/fragment_utente_amico.xml" value="0.22793487574978577" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

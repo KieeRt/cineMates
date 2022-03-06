@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView_nome_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nome_lista"
+        android:textStyle="bold"
+        android:textSize="@dimen/dimensione_titolo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_descrizione"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:gravity="start"
+        android:hint="Descrizione"
+        android:textColorHint="@color/grey"
+        app:endIconMode="custom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nome_lista">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/descrizioneListaAltroUtente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:gravity="start" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView_elenco_film_in_comune"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:alpha="@dimen/text_lv2_alpha"
+
+        android:text="Elenco Film"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout_descrizione"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_descrizione" />
+
+    <ListView
+        android:id="@+id/listViewFilmInListaAltroUtente"
+        android:layout_width="350dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_elenco_film_in_comune">
+
+    </ListView>
+
+    <ImageView
+        android:id="@+id/imageView_segnalazione_lista"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_nome_lista"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout_descrizione"
+        app:layout_constraintTop_toTopOf="@+id/textView_nome_lista"
+        app:srcCompat="@drawable/ic_baseline_error_outline_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

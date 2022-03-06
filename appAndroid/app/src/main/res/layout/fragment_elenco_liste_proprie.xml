@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/titoloSchermataListe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/liste"
+        android:textSize="@dimen/dimensione_titolo_big"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/listViewSchermataTutteListe"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/pulsanteAddInLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:contentDescription="@string/descrizionePulsantePlusCreaLista"
+        android:src="@drawable/ic_baseline_playlist_add_24"
+
+        android:text="@string/extended_fab_content_desc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="@dimen/text_lv2_alpha"
+        android:text="@string/elenco_liste"
+        android:textSize="@dimen/dimensione_sottotitolo"
+        app:layout_constraintStart_toStartOf="@+id/listViewSchermataTutteListe"
+        app:layout_constraintTop_toBottomOf="@+id/titoloSchermataListe" />
+
+    <ListView
+        android:id="@+id/listViewSchermataTutteListe"
+        android:layout_width="@dimen/standard_width"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+    </ListView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.appandroid.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_notifiche"
+            app:destination="@id/nav_notifiche"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/fade_out"
+ />
+        <action
+            android:id="@+id/action_nav_home_to_elencoListeProprieFragment"
+            app:destination="@id/elencoListeProprieFragment" />
+        <action
+            android:id="@+id/moveToContenutoLista"
+            app:destination="@id/elencoFilmInListaPropria" />
+        <action
+            android:id="@+id/moveToSchedaFilm"
+            app:destination="@id/schedaFilm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profilo"
+        android:name="com.example.appandroid.ui.profilo.ProfiloFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_profilo" />
+
+    <fragment
+        android:id="@+id/nav_Info"
+        android:name="com.example.appandroid.ui.info.InfoFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_info"/>
+
+    <fragment
+        android:id="@+id/ricercaFragment"
+        android:name="com.example.appandroid.ui.ricerca.RicercaFragment"
+        android:label="RicercaFragment"
+        tools:layout="@layout/fragment_ricerca_film">
+        <action
+            android:id="@+id/action_ricercaFragment_to_schedaFilm"
+            app:destination="@id/schedaFilm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/amiciFragment"
+        android:name="com.example.appandroid.ui.amici.AmiciFragment"
+        android:label="AmiciFragment"
+        tools:layout="@layout/fragment_amici">
+        <action
+            android:id="@+id/action_amiciFragment_to_richiesteAmiciziaFragment"
+            app:destination="@id/richiesteAmiciziaFragment" />
+        <action
+            android:id="@+id/action_amiciFragment_to_ricercaUtentiFragment"
+            app:destination="@id/ricercaUtentiFragment" />
+        <action
+            android:id="@+id/action_amiciFragment_to_altroUtente"
+            app:destination="@id/altroUtente" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_notifiche"
+        android:name="com.example.appandroid.ui.notifiche.NotificheFragment"
+        android:label="notificheFragment"
+        tools:layout="@layout/fragment_notifiche"/>
+    <fragment
+        android:id="@+id/schedaFilm"
+        android:name="com.example.appandroid.ui.schedaFilm.SchedaFilmFragment"
+        android:label="fragment_scheda_film"
+        tools:layout="@layout/fragment_scheda_film" />
+    <fragment
+        android:id="@+id/altroUtente"
+        android:name="com.example.appandroid.ui.altroUtente.AltroUtenteFragment"
+        android:label="fragment_altro_utente"
+        tools:layout="@layout/fragment_altro_utente" >
+        <action
+            android:id="@+id/action_altroUtente_to_listeAltroUtenteFragment"
+            app:destination="@id/listeAltroUtenteFragment" />
+        <action
+            android:id="@+id/action_altroUtente_to_contenutoListaAltroUtente"
+            app:destination="@id/contenutoListaAltroUtente" />
+        <action
+            android:id="@+id/action_altroUtente_to_filmInComuneFragment"
+            app:destination="@id/filmInComuneFragment" />
+        <action
+            android:id="@+id/moveToSchedaFilm"
+            app:destination="@id/schedaFilm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/contenutoListaAltroUtente"
+        android:name="com.example.appandroid.ui.contenutoListaAltroUtente.ContenutoListaAltroUtenteFragment"
+        android:label="fragment_contenuto_lista_altro_utente"
+        tools:layout="@layout/fragment_contenuto_lista_altro_utente" >
+        <action
+            android:id="@+id/moveToSchedaFilm"
+            app:destination="@id/schedaFilm" />
+    </fragment>
+    <fragment
+        android:id="@+id/elencoListeProprieFragment"
+        android:name="com.example.appandroid.ui.elencoListePropie.ElencoListeProprieFragment"
+        android:label="fragment_elenco_liste_proprie"
+        tools:layout="@layout/fragment_elenco_liste_proprie" >
+        <action
+            android:id="@+id/moveToContenutoLista"
+            app:destination="@id/elencoFilmInListaPropria" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/elencoFilmInListaPropria"
+        android:name="com.example.appandroid.ui.contenutoLista.ContenutoListaFragment"
+        android:label="fragment_elenco_film_in_lista_propria"
+        tools:layout="@layout/fragment_contenuto_lista_propria" >
+        <argument
+            android:name="keyListaDaMostrare"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/moveToSchedaFilm"
+            app:destination="@id/schedaFilm" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/filmInComuneFragment"
+        android:name="com.example.appandroid.ui.filmInComune.FilmInComuneFragment"
+        android:label="fragment_film_in_comune"
+        tools:layout="@layout/fragment_film_in_comune" >
+        <action
+            android:id="@+id/moveToSchedaFilm"
+            app:destination="@id/schedaFilm" />
+    </fragment>
+    <fragment
+        android:id="@+id/ricercaUtentiFragment"
+        android:name="com.example.appandroid.ui.ricercaUtenti.RicercaUtentiFragment"
+        android:label="fragment_ricerca_utenti"
+        tools:layout="@layout/fragment_ricerca_utenti" >
+        <action
+            android:id="@+id/action_ricercaUtentiFragment_to_altroUtente"
+            app:destination="@id/altroUtente" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/listeAltroUtenteFragment"
+        android:name="com.example.appandroid.ui.elencoListeAltroUtente.ListeAltroUtenteFragment"
+        android:label="fragment_tutte_le_liste_altro_utente"
+        tools:layout="@layout/fragment_tutte_le_liste_altro_utente" >
+        <action
+            android:id="@+id/action_listeAltroUtenteFragment_to_contenutoListaAltroUtente"
+            app:destination="@id/contenutoListaAltroUtente" />
+    </fragment>
+    <fragment
+        android:id="@+id/richiesteAmiciziaFragment"
+        android:name="com.example.appandroid.ui.richiesteAmicizia.RichiesteAmiciziaFragment"
+        android:label="fragment_tutte_le_richieste_amicizia"
+        tools:layout="@layout/fragment_tutte_le_richieste_amicizia" >
+        <action
+            android:id="@+id/action_richiesteAmiciziaFragment_to_altroUtente"
+            app:destination="@id/altroUtente" />
+    </fragment>
+
+
+</navigation>
