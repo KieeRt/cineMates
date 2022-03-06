@@ -1,11 +1,11 @@
 ## Descrizione concentuale
 CineMates20 è una piattaforma per gli appassionati di cinema, la soluzione è composta da due client, client mobile (Android) destinato agli utenti e client Desktop destinato agli amministatori.
 #### Le principali funzionalità del client mobile (Android):
-* Registrarsi, entrate con email, account Facebook e account Google.
+* Registrarsi/entrate con email, account Facebook e account Google.
 * Creare liste personalizzate di film, con il titolo e la descrizione.
-* Cercare, visualizzare ed aggiungere alle proprie liste film.
-* Cercare, aggiungere e visualizzare altri utenti, con le loro liste ed eventuali film in comune.
-* Segnalare le liste, in caso questi violano le normative della comunity.
+* Cercare/visualizzare/aggiungere alle proprie liste i film.
+* Cercare/visualizzare/aggiungere altri utenti, con le loro liste ed eventuali film in comune.
+* Segnalare le liste, in caso questi violano le normative della community.
 
 #### Le principali funzionalità del client Desktop:
 * Entrare nel sistema con credenziali fornite dal tecnico.
@@ -13,7 +13,7 @@ CineMates20 è una piattaforma per gli appassionati di cinema, la soluzione è c
 
 
 ## Descrizione tecnica
-Servizio viene fornito sviluppando due client in Java, è una altrernativa al server, viene implementata una soluzione serverless grazie al utilizzo di 
+Servizio viene fornito sviluppando due client in Java, e come una altrernativa al server, viene implementata una soluzione serverless grazie al utilizzo di 
 questi sistemi cloud (per documentazione dettagliata consultate file "documentazione.pdf"):
 * AWS cloud: Cognito, API Gateway, Lambda (utilizzando Python 3.7), Simple Storage Service (S3), Relational Database Postgress (RDB) e CloudWatch.
 * Altri: Google sing-in, Facebook sing-in e OMDb API.
