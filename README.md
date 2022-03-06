@@ -8,7 +8,7 @@ CineMates20 è una piattaforma per gli appassionati di cinema, la soluzione è c
 * Segnalare le liste, in caso questi violano le normative della comunity.
 
 #### Le principali funzionalità del client Desktop:
-* Entrare nel sistema con credenziali fornite dall'amministratore.
+* Entrare nel sistema con credenziali fornite dal tecnico.
 * Visualizzare e gestire le segnalazioni effettuati dai utenti.
 
 
